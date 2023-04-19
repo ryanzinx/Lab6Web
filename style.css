@@ -1,0 +1,319 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman' , Times, serif;
+    font-size: 20px;
+    color: #212529;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: -webkit-fill-availeble;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    background: #74bdcb;
+    transition: all 0.5s ease;
+}
+
+.sidebar .top {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    background-image: linear-gradient(to right, #fec8a7, #b2d2a4);
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(6, 255, 251, 0.1);
+    border-bottom: 1px solid rgba(125, 134, 146, 0.302);
+    transition: all 0.5s ease;
+}
+
+ul li:hover a {
+    padding-left: 100px;
+    background: #efe7bc;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+
+#check {
+    display: none;
+}
+
+label #btn {
+    position: absolute;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+label #open {
+    position: absolute;
+    cursor: pointer;
+    background: #924227;
+    border-radius: 12px;
+    font-size: 30px;
+}
+
+label #open {
+    left: 0;
+    top: 10;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding: 6px 12px;
+    transition: all 0.5s ease;
+}
+
+label #btn {
+    z-index: 1111;
+    left: 195px;
+    top: 25px;
+    font-size: 20px;
+    color: #000000;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+}
+
+#check:checked~.sidebar {
+    left:-250px;
+}
+
+#check:checked~label #open {
+    left:30px;
+    font-size: 20px;
+}
+
+#check:checked~label #btn {
+    left:-195px;
+}
+
+section h1 {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 60px;
+    color: #004369;
+}
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family :system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    width: 100vw;
+    margin: 50px 0;
+    padding: 30px;
+}
+
+.container nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: right;
+    background-color: #209a71;
+}
+
+.container nav a{
+    display: inline-block;
+    color: #fff;
+    padding: 18px;
+}
+
+.container nav a:hover{
+    background-color: #889290;
+    transition: .2s all;
+}
+
+.container footer{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 18px;
+    background-color: #209a71;
+    color: #fff;
+}
+
+.container .main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.container .main h2{
+    text-align: center;
+    font-weight: 500;
+}
+
+.container .tambah{
+    font-size: 16px;
+    font-weight: 400px;
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+    background-color: #8f9298;
+    width: max-content;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.container .tambah:hover{
+    background-color: #209a71;
+    transition: .2s all;
+}
+
+.container .main table tr td a.btnUpdate, table tr td a.btnDelete{
+    display: block;
+    color:#4fd4a8;
+}
+
+.container .main table tr td a.btnUpdate:hover, table tr td a.btnDelete:hover{
+    color:#209a71;
+}
+
+.container table{
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.container table tr th{
+    color: #ffffff;
+    background-color: #bbb8b6;
+    font-weight: bold;
+}
+
+.container table th, td{
+    padding: 13px 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container table tr td:nth-child(5) a, .container table tr td:nth-child(6) a{
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container table tr td:nth-child(1), .container table tr th:nth-child(1){
+    width: 8%;
+}
+
+.container table tr td:nth-child(5), .container table tr td:nth-child(6), .container table tr th:nth-child(5), .container table tr th:nth-child(6){
+    width: 10%;
+} 
+
+.container table tr:nth-child(even){
+    background-color: #64d8d231 ;
+}
+
+.container .card{
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #1abfcb;
+    border-radius: 20px;
+    padding: 45px 20px;
+    box-shadow: 5px 5px 6px #0f0f0fc6;
+    background-color: #DDDDDD;
+}
+
+.container .card .input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .card .input input[type="text"]{
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: 1px solid #65a4c8;
+}
+
+.container .card .input label{
+    display: block;
+    margin: 10px 0 5px 0; 
+    font-weight: bold;
+    font-size: 16px;
+    color: #467780;
+}
+
+.container .card button{
+    display: block;
+    margin: 25px auto 0 auto;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 0;
+    border: 1px solid black;
+    background-color: #c4f1ce;
+}
+
+.container .card button:hover{
+    background-color: #9cc5cb;
+    cursor: pointer;
+}
+
+.container .contact{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .contact a{
+    color: #2c2f42;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 1px black;
+    border-radius: 20%;
+}
+
